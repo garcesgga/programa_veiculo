@@ -1,0 +1,21 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Veiculo
+{
+    internal class Caminhao : Veiculo
+    {
+        //Construtor
+        public Caminhao(string corInicial, int velocidadeInicial, int nivelCombustivelInicial, int numeroRodasInicial) : base(corInicial, velocidadeInicial, nivelCombustivelInicial, numeroRodasInicial) 
+        { }
+
+        //Método para retornar o tipo de veículo
+        public override string tipoVeiculo()
+        {
+            return "Caminhão";
+        }
+    }
+}
